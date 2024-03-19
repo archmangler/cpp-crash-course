@@ -26,11 +26,11 @@ int main(int argc, char** argv){
     
     int i = 0;
 
-    while(i < times)
+    do
     {
         std::cout << "MESSAGE " << i << std::endl;
         i++;
-    }
+    }while(i < times);
 
 /*int age = 13;
 if(age == 22){
