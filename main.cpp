@@ -28,7 +28,12 @@ int main(int argc, char** argv){
 
     do
     {
-        std::cout << "MESSAGE " << i << std::endl;
+
+        if(i > times/2){
+
+                    std::cout << "MESSAGE " << i << std::endl;
+                    break;
+        }
         i++;
     }while(i < times);
 
