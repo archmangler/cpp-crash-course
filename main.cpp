@@ -16,12 +16,23 @@ int sum(int x, int y){
     return x+y;
 }
 
-
-
 //the C++ main routine
 int main(int argc, char** argv){
+    
+    
+    int times = 0;
+    std::cout << "Please enter the number of times: " << std::endl;
+    std::cin >> times;
+    
+    int i = 0;
 
-int age = 13;
+    while(i < times)
+    {
+        std::cout << "MESSAGE " << i << std::endl;
+        i++;
+    }
+
+/*int age = 13;
 if(age == 22){
     std::cout <<"Her age is 22 ...\n" << std::endl;
 }
@@ -38,5 +49,8 @@ else
 for(int i = 0;i < 10;i++){
     std::cout << i <<": I will not do it again.\n" <<std::endl;
 }
+
+*/
+
     return 0;
 }
