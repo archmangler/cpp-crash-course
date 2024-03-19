@@ -18,8 +18,40 @@ int sum(int x, int y){
 
 //the C++ main routine
 int main(int argc, char** argv){
-    
-    
+
+int x = 11;
+
+switch(x)
+{
+
+case 0:
+{
+    std::cout << "CASE ZERO!!\n" << std::endl;
+}
+break;
+
+case 1:
+{
+    std::cout << "CASE ONE \n" << std::endl;
+}
+break;
+
+case 2:
+{
+    std::cout << "CASE more than TWO\n" << std::endl;
+}
+break;
+
+default:
+{
+    std::cout << "case more than two ....\n" << std::endl;
+}
+
+
+}
+
+
+/*
     int times = 0;
     std::cout << "Please enter the number of times: " << std::endl;
     std::cin >> times;
@@ -36,6 +68,7 @@ int main(int argc, char** argv){
         }
         i++;
     }while(i < times);
+*/
 
 /*int age = 13;
 if(age == 22){
