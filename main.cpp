@@ -1,11 +1,16 @@
-#include "main.h"
-#include "utils.h"
 #include <iostream>
+namespace ImageCentral
+{
+    void createImage(int width, int height)
+    {
+        std::cout << "CREATING AN IMAGE" << std::endl;
 
-int sum(int x, int y);
+    }
+}
 
 int main(int argc, char** argv)
 {
-    std::cout <<"50+29=" << sum(50,20)<<std::endl;
-    return 0;
+
+    ImageCentral::createImage(300,200);
+
 }
