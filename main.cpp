@@ -8,9 +8,12 @@ namespace ImageCentral
     }
 }
 
+using namespace ImageCentral;
 int main(int argc, char** argv)
 {
 
-    ImageCentral::createImage(300,200);
+    //ImageCentral::createImage(300,200);
+
+    createImage(300,200);
 
 }
