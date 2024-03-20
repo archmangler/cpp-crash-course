@@ -44,7 +44,7 @@ break;
 
 default:
 {
-    std::cout << "case more than two ....\n" << std::endl;
+    std::cout << "case more than a few (default) ....\n" << std::endl;
 }
 
 
