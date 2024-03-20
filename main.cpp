@@ -1,16 +1,11 @@
 #include "main.h"
+#include "utils.h"
 #include <iostream>
 
-void test();
+int sum(int x, int y);
 
-int main(int argc, char** argv){
-
-    test();
-    
-    return 0;
-}
-
-void test()
+int main(int argc, char** argv)
 {
- std::cout << "Hello Universe!\n" ;
+    std::cout <<"50+29=" << sum(50,20)<<std::endl;
+    return 0;
 }
