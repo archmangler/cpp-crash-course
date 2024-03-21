@@ -5,7 +5,8 @@
 int main(int argc, char**  argv)
 {
 
-std::ifstream file("file.dat");
+std::streampos begin, end; //preparing to determine size of file
+std::ifstream file("file.dat", std::ios::binary);
 
 if(file.is_open())
 {
@@ -17,11 +18,19 @@ else
     return 1;
 }
 
+
+begin = file.tellg();
+file.seekg(0, std::ios::end);
+end = file.tellg();
+
+std::cout << "File size: " << (end - begin) << std::endl;
 std::string msg;
 
+/* When reading out file contents ...
 while(getline(file,msg))
 {
     std::cout << "file line -> " << msg << std::endl;
 }
+*/
     return 0;
 }
