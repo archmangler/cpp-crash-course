@@ -1,16 +1,19 @@
 #include <iostream>
 
+
 int main(int argc, char** argv)
 {
 
-std::cout << "Enter Your Age: " << std::endl;
+    int array[10];
 
-int age;
+    for(int i=0;i<10;i++)
+    {
+        array[i] = i;
+    }
 
-std::cin >> age;
-
-std::cout << "Your age is: " << age << std::endl;
-
-return 0;
-
+    for(int j=0;j<10;j++)
+    {
+        std::cout << "array item value: " << array[j] << std::endl;
+    }
+    return 0;
 }
