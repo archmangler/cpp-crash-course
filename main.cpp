@@ -1,16 +1,33 @@
-#include <string>
+#include <vector>
 #include <iostream>
 
 int main(int argc, char**  argv)
 {
+    std::vector<int> vec;
+    vec.push_back(55);
+    vec.push_back(53);
+    vec.push_back(53);
+    vec.push_back(56);
+    vec.push_back(45);
+    vec.push_back(65);
+    vec.push_back(75);
+    vec.push_back(15);
+    vec.push_back(45);
 
-    std::string str = "helloworld";
-    std::string str2 = "hello universe!";
+for (int i=0;i<vec.size(); i++) 
+{
+    std::cout << "vec[i] -> " << vec[i] << std::endl;
+}
 
-    std::cout << (str + str2) << std::endl;
+vec.pop_back();
 
-    std::string str3 = std::to_string(100);
-    std::cout << str3 << std::endl;
+
+std::cout << "pop back ?" <<"\n";
+
+for (int i=0;i<vec.size(); i++) 
+{
+    std::cout << "vec[i] -> " << vec[i] << std::endl;
+}
 
     return 0;
 }
