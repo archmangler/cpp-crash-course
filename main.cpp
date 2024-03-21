@@ -1,19 +1,16 @@
+#include <string>
 #include <iostream>
 
-
-int main(int argc, char** argv)
+int main(int argc, char**  argv)
 {
 
-    int array[10];
+    std::string str = "helloworld";
+    std::string str2 = "hello universe!";
 
-    for(int i=0;i<10;i++)
-    {
-        array[i] = i;
-    }
+    std::cout << (str + str2) << std::endl;
 
-    for(int j=0;j<10;j++)
-    {
-        std::cout << "array item value: " << array[j] << std::endl;
-    }
+    std::string str3 = std::to_string(100);
+    std::cout << str3 << std::endl;
+
     return 0;
 }
