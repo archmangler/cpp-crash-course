@@ -14,5 +14,7 @@ int main(int argc, char**  argv)
     
     std::cout << "new value of a: " << a << std::endl;
 
+    std::cout << "pointer value: " << ptr << " pointer address contents: " << *ptr << " address of variable 'a': " << &a << std::endl;
+
     return 0;
 }
