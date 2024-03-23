@@ -1,5 +1,5 @@
 #include <iostream>
-#include "dog.cpp"
+#include "dog.h"
 
 
 int main(int argc,char** argv) 
