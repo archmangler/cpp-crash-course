@@ -1,47 +1,14 @@
-#include <fstream>
 #include <iostream>
-#include <string>
+#include "dog.cpp"
 
-class Animal
+
+int main(int argc,char** argv) 
 {
-public:
-    Animal()
-    {
+    Dog* dog = new Dog();
+    std::cout << "Dog total legs: " << dog->getTotalLegs() << std::endl;
 
-    }
-
-virtual ~Animal()
-{
-
-}
-
-};
-
-class Dog : public Animal
-{
-public:
-    Dog(): Animal()
-    {
-
-    }
-
-virtual ~Dog()
-{
-
-}
-
-int abc=666;
-
-};
-
-
-int main(int argc, char**  argv)
-{    
-
-    Animal* animal_one = new Dog();
-    Dog* dog = (Dog*) animal_one;
-
-    std::cout << "Access attribute of Dog Class: " << dog->abc << std::endl;
-
+    dog->setTotalLegs(4);
+    std::cout << "Dog total legs: " << dog->getTotalLegs() << std::endl;
+    
     return 0;
 }
