@@ -2,31 +2,14 @@
 #include <iostream>
 #include <string>
 
-struct abc
-{
-    /* data */
-    int a;
-    int b;
-};
-
-
 int main(int argc, char**  argv)
 {    
+    unsigned int i = 40;
+    unsigned char c = (char) i;
 
-    struct abc x;
-    x.a = 33;
-    x.b = 44;
+    std::cout << "i value = " << i << std::endl;
+    std::cout << "c value = " << (unsigned int)c << std::endl;
 
-    struct abc* xxx  = &x;
-
-    xxx->a = 3;
-    xxx->b = 4;
-
-    std::cout << "xxx->a = " << xxx->a << std::endl;
-    std::cout << "xxx->b = " << xxx->b << std::endl;
-
-    std::count 
-    
 
     return 0;
 }
