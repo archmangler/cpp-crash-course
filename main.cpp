@@ -9,6 +9,8 @@ int main(int argc,char** argv)
 
     dog->setTotalLegs(4);
     std::cout << "Dog total legs: " << dog->getTotalLegs() << std::endl;
+
+    delete dog; //we can do this because we have a destructor.
     
     return 0;
 }

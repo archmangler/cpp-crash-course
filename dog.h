@@ -3,6 +3,8 @@
 class Dog
 {
     public:
+    Dog();
+    virtual ~Dog();
     void setTotalLegs(int total_legs);
     int getTotalLegs();
     private:
